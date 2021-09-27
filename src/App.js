@@ -1,27 +1,24 @@
-// import logo from './logo.svg';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from './pages/components/home';
-import connectWallet from './pages/components/connectWallet';
-import byEmail from './pages/components/byEmail';
-import modelMinting from './pages/components/modelMinting';
-import modelMintingRefresh from './pages/components/modelMintingRefresh';
-import welcomeSpaceProgram from './pages/components/welcomeSpaceProgram';
-
+import logo from './logo.svg';
 import './App.css';
-
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route path='/' exact component={Home} />
-        <Route path='/connectWallet' exact component={connectWallet} />
-        <Route path='/byEmail' exact component={byEmail} />
-        <Route path='/modelMinting' exact component={modelMinting} />
-        <Route path='/modelMintingRefresh' exact component={modelMintingRefresh} />
-        <Route path='/welcomeSpaceProgram' exact component={welcomeSpaceProgram} />
-      </Switch>
-    </Router>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
   );
 }
 
